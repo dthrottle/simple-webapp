@@ -11,7 +11,8 @@ public class SimpleServlet extends HttpServlet {
 				throws ServletException, IOException {
 
 				PrintWriter out = response.getWriter();
-				out.println("SimpleServlet Hello World!");
+				out.println("<html><body><center><h1>SimpleServlet Hello World!</h1>" +
+						"</center></body></html>");
 				out.flush();
 				out.close();
 	}

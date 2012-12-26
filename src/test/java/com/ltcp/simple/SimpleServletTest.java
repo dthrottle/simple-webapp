@@ -23,7 +23,7 @@ public class SimpleServletTest {
 		assertEquals(200,response.getStatus());
 		String content = response.getContent();
 		System.out.println(content);
-		assertEquals("SimpleServlet Hello World!",content.trim());
+		assertTrue(content.contains("SimpleServlet Hello World!"));
 	}
 
 }
